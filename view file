@@ -1,0 +1,6 @@
+  holder.card_view.setOnClickListener(v -> {
+            String url = Const.IMAGE_URL + item.getFormPath();
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            context.startActivity(i);
+        });
