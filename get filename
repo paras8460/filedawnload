@@ -1,0 +1,12 @@
+    Uri uri = data.getData();
+                File file = new File(FileUtils.getPath(getApplicationContext(), uri));
+
+               /* oldpath= String.valueOf(file);
+                for(int i = 0; i < caseDocumentDetailList.size(); i++){
+                    if (caseDocumentDetailList.get(i).getId() == select_documentid) {
+                        caseDocumentDetailList.get(i).setOldDocPath(oldpath);
+                    }
+                }*/
+               String filepath= String.valueOf(FileUtils.getFile(this,uri));
+// it contains your image path...I'm using a temp string...
+                String documentfilename=filepath.substring(filepath.lastIndexOf("/")+1);
